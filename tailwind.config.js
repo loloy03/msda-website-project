@@ -6,6 +6,9 @@ module.exports = {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
       },
+      colors: {
+        "default-yellow": "#D5A10E",
+      },
     },
   },
   plugins: [require("flowbite/plugin")],
