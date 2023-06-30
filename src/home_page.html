@@ -19,12 +19,8 @@
       <div
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
-        <a href="#" class="flex items-center">
-          <img
-            src="/pics/Logomsda-logo.png"
-            class="w-64"
-            alt="msda logo"
-          />
+        <a href="#" class="flex items-center ">
+        <img src="/pics/Logomsda-logo.png" class="w-40" alt="msda logo" />
         </a>
         <div class="flex md:order-2">
           <button
@@ -105,15 +101,35 @@
       </div>
     </nav>
     <!--loop section-->
-    <section class="bg-black">
-      <video class="w-screen h-screen object-cover opacity-60" autoplay loop muted>
+    <section class="bg-black relative">
+      <video
+        class="w-screen h-screen object-cover opacity-40"
+        autoplay
+        loop
+        muted
+      >
         <source src="/pics/home_vid.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+      <div class="absolute bottom-1 ml-3 lg:ml-5 mb-5">
+        <!--heading-->
+        <div class="text-white font-saol lg:text-3xl lg:w-1/2 text-xl">
+          Discover the Joy of Belonging to Masinop Seventh-day Adventist Church
+        </div>
+        <!--subheding-->
+        <div
+          class="font-lato text-white lg:w-1/3 lg:text-sm mt-4 w-3/4 text-xs"
+        >
+          Welcome to Masinop Seven-day Adventist Church, where faith comes
+          alive. Experience inspiring worship, meaningful connections, and
+          impactful service. Join us in embracing God's love and transforming
+          lives.
+        </div>
+        <button class="bg-default-yellow hover:bg-yellow-300 mt-4 font-lato text-white text-xs p-2 px-4 transition duration-300 ease-in-out">Explore</button>
+      </div>
     </section>
-    <section>
-        <div class="mt-10">asd</div>
-    </section>
+
+    <section>asd</section>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
   </body>

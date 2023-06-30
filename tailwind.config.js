@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         lato: ["Lato", "sans-serif"],
+        saol: ["SaolDisplay", "sans-serif"],
       },
       colors: {
         "default-yellow": "#D5A10E",
