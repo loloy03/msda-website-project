@@ -10,6 +10,9 @@ module.exports = {
       colors: {
         "default-yellow": "#D5A10E",
       },
+      backgroundColor: {
+        'white': '#ffffff',
+      },
     },
   },
   plugins: [require("flowbite/plugin")],

@@ -11,22 +11,34 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <!--font awesome-->
+    <script
+      src="https://kit.fontawesome.com/840def115e.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <nav
-      class="dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-gray-200 dark:border-gray-600"
+      id="navbar"
+      class="fixed w-full z-20 top-0 left-0 border-gray-200 dark:border-gray-600 transition duration-300 ease-in-out"
     >
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        id="navbarContents"
+        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4 transition duration-500 ease-in-out"
       >
-        <a href="#" class="flex items-center ">
-        <img src="/pics/Logomsda-logo.png" class="w-40" alt="msda logo" />
+        <a href="#" class="flex items-center">
+          <img
+            src="/pics/Logomsda-logo.png"
+            class="w-40 lg:w-60"
+            alt="msda logo"
+          />
         </a>
         <div class="flex md:order-2">
           <button
+            id="navbarButton"
             data-collapse-toggle="navbar-sticky"
             type="button"
-            class="inline-flex items-center p-2 text-sm text-white md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200"
+            class="inline-flex items-center p-2 text-sm md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 text-white"
             aria-controls="navbar-sticky"
             aria-expanded="false"
           >
@@ -51,12 +63,12 @@
           id="navbar-sticky"
         >
           <ul
-            class="flex flex-col p-4 md:p-0 mt-4 font-medium border lg:bg-transparent bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
+            class="flex flex-col p-4 md:p-0 mt-4 border md:bg-transparent bg-white md:flex-row md:space-x-8 md:mt-0 md:border-0 dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
           >
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 font-lato hover:text-default-yellow transition duration-300 ease-in-out"
+                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:p-0 font-lato md:text-white hover:text-default-yellow transition duration-300 ease-in-out"
                 aria-current="page"
                 >Home</a
               >
@@ -64,35 +76,35 @@
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 font-lato hover:text-default-yellow transition duration-300 ease-in-out"
+                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:bg-transparent md:text-white md:p-0 md:dark:text-yellow-500 font-lato hover:text-default-yellow transition duration-300 ease-in-out"
                 >About</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 font-lato hover:text-default-yellow transition duration-300 ease-in-out"
+                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:p-0 font-lato md:text-white hover:text-default-yellow transition duration-300 ease-in-out"
                 >Events</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 font-lato hover:text-default-yellow transition duration-300 ease-in-out"
+                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:p-0 md:text-white font-lato hover:text-default-yellow transition duration-300 ease-in-out"
                 >Watch</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 font-lato hover:text-default-yellow transition duration-300 ease-in-out"
+                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:p-0 md:text-white font-lato hover:text-default-yellow transition duration-300 ease-in-out"
                 >Contact Us</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 font-lato hover:text-default-yellow transition duration-300 ease-in-out"
+                class="block py-2 pl-3 pr-4 text-black lg:text-white lg:px-5 md:p-0 md:text-white font-lato hover:text-default-yellow transition duration-300 ease-in-out"
                 >Give</a
               >
             </li>
@@ -100,6 +112,7 @@
         </div>
       </div>
     </nav>
+
     <!--loop section-->
     <section class="bg-black relative">
       <video
@@ -113,7 +126,7 @@
       </video>
       <div class="absolute bottom-1 ml-3 lg:ml-5 mb-5">
         <!--heading-->
-        <div class="text-white font-saol lg:text-3xl lg:w-1/2 text-xl">
+        <div class="text-white font-saol md:text-3xl lg:w-1/2 text-xl">
           Discover the Joy of Belonging to Masinop Seventh-day Adventist Church
         </div>
         <!--subheding-->
@@ -125,12 +138,71 @@
           impactful service. Join us in embracing God's love and transforming
           lives.
         </div>
-        <button class="bg-default-yellow hover:bg-yellow-300 mt-4 font-lato text-white text-xs p-2 px-4 transition duration-300 ease-in-out">Explore</button>
+        <button
+          class="bg-default-yellow hover:bg-yellow-300 hover:mt-4 font-lato text-white text-xs p-2 px-4 transition duration-700 ease-in-out hover:px-6px mt-4"
+        >
+          Explore
+        </button>
       </div>
     </section>
-
-    <section>asd</section>
+    <!--about us section-->
+    <section class="p-6 my-5">
+      <div class="md:flex md:flex-row">
+        <div class="md:basis-1/2 p-5 md:mt-auto lg:mt-3">
+          <div class="lg:ml-10 lg:pt-20">
+            <div class="text-4xl md:text-5xl text-black font-saol lg:text-6xl">
+              KNOW MORE
+            </div>
+            <div class="text-4xl md:text-5xl text-black font-saol lg:text-6xl">
+             ABOUT US
+            </div>
+          </div>
+          <div class="lg:ml-40 p-5">
+            <div class="font-lato mt-5 text-sm font-bold lg:text-lg">
+              Discover the Seventh-day Adventist Church: Unveiling Our Beliefs
+              and Mission
+            </div>
+            <div class="font-lato mt-5 text-sm lg:text-lg">
+              Welcome to the Masinop Seventh-day Adventist Church! Discover our
+              core beliefs and mission as we strive to make a positive impact.
+              Join us on this transformative journey of faith, service, and
+              community. Experience the essence of our church and be inspired by
+              our unwavering commitment to making a difference.
+            </div>
+            <div class="block">
+              <i
+                class="fa-solid fa-arrow-right lg:text-lg"
+                style="color: #d5a10e"
+              ></i>
+              <button
+                class="font-lato font-bold mt-5 text-sm lg:text-lg transition duration-700 ease-in-out hover:text-default-yellow hover:pl-2"
+              >
+                Know More
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="md:basis-1/2 mt-auto">
+          <img src="/pics/about_us_pic.jpg" alt="" class="mt-5" />
+        </div>
+      </div>
+    </section>
     <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.6/flowbite.min.js"></script>
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        var navbarButton = document.getElementById("navbarButton");
+        var scrolled = window.scrollY;
+
+        if (scrolled > 0) {
+          navbar.classList.add("bg-white");
+          navbarButton.classList.remove("text-white");
+        } else {
+          navbar.classList.remove("bg-white");
+          navbarButton.classList.add("text-white");
+        }
+      });
+    </script>
   </body>
 </html>
